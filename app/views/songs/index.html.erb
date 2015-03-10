@@ -1,4 +1,4 @@
-<h1> LOUDcloud! </h1>
+<h1>LOUDcloud</h1>
 
 </br></br>
 <div class="row">
@@ -6,10 +6,12 @@
     <ul class="song-list">
       <% @songs.each do |song| %>
         <%= render song %>
+        <%= song.likes.count %>
       <% end %>
     </ul>
   </div>
   <div class="one-half column">
     <%= render 'form' %>
+
   </div>
 </div>
