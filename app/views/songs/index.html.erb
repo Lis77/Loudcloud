@@ -1,0 +1,15 @@
+<h1> LOUDcloud! </h1>
+
+</br></br>
+<div class="row">
+  <div class="one-half column">
+    <ul class="song-list">
+      <% @songs.each do |song| %>
+        <%= render song %>
+      <% end %>
+    </ul>
+  </div>
+  <div class="one-half column">
+    <%= render 'form' %>
+  </div>
+</div>
